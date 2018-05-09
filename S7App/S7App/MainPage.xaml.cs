@@ -7,11 +7,12 @@ using Xamarin.Forms;
 
 namespace S7App
 {
-	public partial class MainPage : ContentPage
-	{
-		public MainPage()
-		{
-			InitializeComponent();
-		}
-	}
+    public partial class MainPage : ContentPage
+    {
+        public MainPage()
+        {
+            InitializeComponent();
+            this.BindingContext = new MainViewModel();
+        }
+    }
 }
